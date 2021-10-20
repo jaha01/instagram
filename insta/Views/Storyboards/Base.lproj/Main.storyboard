@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H1J-Z4-Wst">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -30,11 +30,11 @@
             </objects>
             <point key="canvasLocation" x="-91" y="-46"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="cIj-au-HG8">
             <objects>
                 <navigationController id="rLd-SC-Tkf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="house" catalog="system" id="Y3f-9Z-JET"/>
+                    <tabBarItem key="tabBarItem" title="" image="house" catalog="system" id="Y3f-9Z-JET"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wTg-6k-ffX">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -63,11 +63,11 @@
             </objects>
             <point key="canvasLocation" x="-1649" y="1413"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="NLT-1D-YXB">
             <objects>
                 <navigationController id="o6c-ve-Ugt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="person" catalog="system" id="d6I-Uv-Zya"/>
+                    <tabBarItem key="tabBarItem" title="" image="person" catalog="system" id="d6I-Uv-Zya"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="JzK-f8-rgW">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -80,11 +80,11 @@
             </objects>
             <point key="canvasLocation" x="1494" y="682"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="WOU-Cc-lek">
             <objects>
                 <navigationController id="9eo-tb-Nip" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="heart" catalog="system" id="f4I-1l-TWE"/>
+                    <tabBarItem key="tabBarItem" title="" image="heart" catalog="system" id="f4I-1l-TWE"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="k5c-yq-QnF">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -97,11 +97,11 @@
             </objects>
             <point key="canvasLocation" x="712" y="682"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="9sw-hJ-6mj">
             <objects>
                 <navigationController id="iRV-De-tt3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="plus" catalog="system" id="FbY-1w-RwG"/>
+                    <tabBarItem key="tabBarItem" title="" image="plus" catalog="system" id="FbY-1w-RwG"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Rr2-Uw-Di4">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -114,11 +114,11 @@
             </objects>
             <point key="canvasLocation" x="-91" y="682"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="P62-aL-Ngs">
             <objects>
                 <navigationController id="aai-Ef-AVy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="magnifyingglass" catalog="system" id="olB-Ia-vng"/>
+                    <tabBarItem key="tabBarItem" title="" image="magnifyingglass" catalog="system" id="olB-Ia-vng"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ipc-OC-QId">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -131,10 +131,10 @@
             </objects>
             <point key="canvasLocation" x="-857" y="682"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="nP9-oS-hxT">
             <objects>
-                <viewController id="PN0-QA-BJQ" sceneMemberID="viewController">
+                <viewController id="PN0-QA-BJQ" customClass="ProfileViewController" customModule="insta" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cVZ-oX-opC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -147,10 +147,10 @@
             </objects>
             <point key="canvasLocation" x="1493" y="1413"/>
         </scene>
-        <!--View Controller-->
+        <!--Notification View Controller-->
         <scene sceneID="h6v-gY-Oru">
             <objects>
-                <viewController id="5g7-Jg-3rp" sceneMemberID="viewController">
+                <viewController id="5g7-Jg-3rp" customClass="NotificationViewController" customModule="insta" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XPY-T9-ybO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -163,10 +163,10 @@
             </objects>
             <point key="canvasLocation" x="712" y="1413"/>
         </scene>
-        <!--View Controller-->
+        <!--Camera View Controller-->
         <scene sceneID="tmn-GX-jVX">
             <objects>
-                <viewController id="4VA-No-1t2" sceneMemberID="viewController">
+                <viewController id="4VA-No-1t2" customClass="CameraViewController" customModule="insta" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jTn-gk-H7r">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -179,10 +179,10 @@
             </objects>
             <point key="canvasLocation" x="-91" y="1413"/>
         </scene>
-        <!--View Controller-->
+        <!--Explore View Controller-->
         <scene sceneID="ESd-VS-DNm">
             <objects>
-                <viewController id="sA9-g7-w1s" sceneMemberID="viewController">
+                <viewController id="sA9-g7-w1s" customClass="ExploreViewController" customModule="insta" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m2X-Rp-CCe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
