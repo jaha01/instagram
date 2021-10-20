@@ -7,23 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CDFAFB1A76B54D8A2C94460 /* Pods_insta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 666B1F2B1625371DB5C4213A /* Pods_insta.framework */; };
 		44F2E6B327204E1B00E43C80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F2E6B227204E1B00E43C80 /* AppDelegate.swift */; };
 		44F2E6B527204E1B00E43C80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F2E6B427204E1B00E43C80 /* SceneDelegate.swift */; };
-		44F2E6B727204E1B00E43C80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F2E6B627204E1B00E43C80 /* ViewController.swift */; };
+		44F2E6B727204E1B00E43C80 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F2E6B627204E1B00E43C80 /* HomeViewController.swift */; };
 		44F2E6BA27204E1B00E43C80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F2E6B827204E1B00E43C80 /* Main.storyboard */; };
 		44F2E6BC27204E1F00E43C80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44F2E6BB27204E1F00E43C80 /* Assets.xcassets */; };
 		44F2E6BF27204E1F00E43C80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F2E6BD27204E1F00E43C80 /* LaunchScreen.storyboard */; };
+		44F2E6CC272053E400E43C80 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F2E6CB272053E400E43C80 /* ExploreViewController.swift */; };
+		44F2E6CE272053F700E43C80 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F2E6CD272053F700E43C80 /* CameraViewController.swift */; };
+		44F2E6D02720540600E43C80 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F2E6CF2720540600E43C80 /* NotificationViewController.swift */; };
+		44F2E6D22720541000E43C80 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F2E6D12720541000E43C80 /* ProfileViewController.swift */; };
+		44F2E6D4272055C900E43C80 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44F2E6D3272055C900E43C80 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		44F2E6AF27204E1B00E43C80 /* insta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = insta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F2E6B227204E1B00E43C80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44F2E6B427204E1B00E43C80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		44F2E6B627204E1B00E43C80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		44F2E6B627204E1B00E43C80 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		44F2E6B927204E1B00E43C80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44F2E6BB27204E1F00E43C80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44F2E6BE27204E1F00E43C80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44F2E6C027204E1F00E43C80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44F2E6CB272053E400E43C80 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		44F2E6CD272053F700E43C80 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		44F2E6CF2720540600E43C80 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		44F2E6D12720541000E43C80 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		44F2E6D3272055C900E43C80 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		666B1F2B1625371DB5C4213A /* Pods_insta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_insta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B51AD8E3F701C03906341F35 /* Pods-insta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-insta.debug.xcconfig"; path = "Target Support Files/Pods-insta/Pods-insta.debug.xcconfig"; sourceTree = "<group>"; };
+		EDD120CD5F9BFEF91C5E01D6 /* Pods-insta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-insta.release.xcconfig"; path = "Target Support Files/Pods-insta/Pods-insta.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CDFAFB1A76B54D8A2C94460 /* Pods_insta.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +57,8 @@
 			children = (
 				44F2E6B127204E1B00E43C80 /* insta */,
 				44F2E6B027204E1B00E43C80 /* Products */,
+				7548B6C86E52CC349C89DB57 /* Pods */,
+				F756D23542144A8DB4B4F7CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +73,61 @@
 		44F2E6B127204E1B00E43C80 /* insta */ = {
 			isa = PBXGroup;
 			children = (
-				44F2E6B227204E1B00E43C80 /* AppDelegate.swift */,
-				44F2E6B427204E1B00E43C80 /* SceneDelegate.swift */,
-				44F2E6B627204E1B00E43C80 /* ViewController.swift */,
-				44F2E6B827204E1B00E43C80 /* Main.storyboard */,
-				44F2E6BB27204E1F00E43C80 /* Assets.xcassets */,
-				44F2E6BD27204E1F00E43C80 /* LaunchScreen.storyboard */,
+				44F2E6C827204E5200E43C80 /* Resources */,
+				44F2E6CA27204FEA00E43C80 /* Views */,
+				44F2E6B627204E1B00E43C80 /* HomeViewController.swift */,
+				44F2E6CB272053E400E43C80 /* ExploreViewController.swift */,
+				44F2E6CD272053F700E43C80 /* CameraViewController.swift */,
+				44F2E6CF2720540600E43C80 /* NotificationViewController.swift */,
+				44F2E6D12720541000E43C80 /* ProfileViewController.swift */,
 				44F2E6C027204E1F00E43C80 /* Info.plist */,
 			);
 			path = insta;
+			sourceTree = "<group>";
+		};
+		44F2E6C827204E5200E43C80 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				44F2E6B227204E1B00E43C80 /* AppDelegate.swift */,
+				44F2E6B427204E1B00E43C80 /* SceneDelegate.swift */,
+				44F2E6D3272055C900E43C80 /* GoogleService-Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		44F2E6C927204FB300E43C80 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				44F2E6B827204E1B00E43C80 /* Main.storyboard */,
+				44F2E6BD27204E1F00E43C80 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		44F2E6CA27204FEA00E43C80 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				44F2E6C927204FB300E43C80 /* Storyboards */,
+				44F2E6BB27204E1F00E43C80 /* Assets.xcassets */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7548B6C86E52CC349C89DB57 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B51AD8E3F701C03906341F35 /* Pods-insta.debug.xcconfig */,
+				EDD120CD5F9BFEF91C5E01D6 /* Pods-insta.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F756D23542144A8DB4B4F7CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				666B1F2B1625371DB5C4213A /* Pods_insta.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44F2E6C327204E1F00E43C80 /* Build configuration list for PBXNativeTarget "insta" */;
 			buildPhases = (
+				BC16D7AEF38536D2E82828A3 /* [CP] Check Pods Manifest.lock */,
 				44F2E6AB27204E1B00E43C80 /* Sources */,
 				44F2E6AC27204E1B00E43C80 /* Frameworks */,
 				44F2E6AD27204E1B00E43C80 /* Resources */,
+				6D9A39D49D4544AE110BD2EA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44F2E6BF27204E1F00E43C80 /* LaunchScreen.storyboard in Resources */,
+				44F2E6D4272055C900E43C80 /* GoogleService-Info.plist in Resources */,
 				44F2E6BC27204E1F00E43C80 /* Assets.xcassets in Resources */,
 				44F2E6BA27204E1B00E43C80 /* Main.storyboard in Resources */,
 			);
@@ -133,12 +199,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6D9A39D49D4544AE110BD2EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-insta/Pods-insta-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-insta/Pods-insta-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-insta/Pods-insta-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC16D7AEF38536D2E82828A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-insta-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		44F2E6AB27204E1B00E43C80 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44F2E6B727204E1B00E43C80 /* ViewController.swift in Sources */,
+				44F2E6CC272053E400E43C80 /* ExploreViewController.swift in Sources */,
+				44F2E6CE272053F700E43C80 /* CameraViewController.swift in Sources */,
+				44F2E6D02720540600E43C80 /* NotificationViewController.swift in Sources */,
+				44F2E6B727204E1B00E43C80 /* HomeViewController.swift in Sources */,
+				44F2E6D22720541000E43C80 /* ProfileViewController.swift in Sources */,
 				44F2E6B327204E1B00E43C80 /* AppDelegate.swift in Sources */,
 				44F2E6B527204E1B00E43C80 /* SceneDelegate.swift in Sources */,
 			);
@@ -284,6 +396,7 @@
 		};
 		44F2E6C427204E1F00E43C80 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B51AD8E3F701C03906341F35 /* Pods-insta.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -311,6 +424,7 @@
 		};
 		44F2E6C527204E1F00E43C80 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDD120CD5F9BFEF91C5E01D6 /* Pods-insta.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
