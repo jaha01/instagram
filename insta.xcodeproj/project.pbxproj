@@ -33,6 +33,7 @@
 		44F2E6F4272062BF00E43C80 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F2E6F3272062BF00E43C80 /* StorageManager.swift */; };
 		44F2E6F6272062CC00E43C80 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F2E6F5272062CC00E43C80 /* AuthManager.swift */; };
 		44F2E6F8272062D700E43C80 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F2E6F7272062D700E43C80 /* Extensions.swift */; };
+		44F2E6FA2720AA3500E43C80 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F2E6F92720AA3400E43C80 /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		44F2E6F3272062BF00E43C80 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		44F2E6F5272062CC00E43C80 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		44F2E6F7272062D700E43C80 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		44F2E6F92720AA3400E43C80 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		666B1F2B1625371DB5C4213A /* Pods_insta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_insta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B51AD8E3F701C03906341F35 /* Pods-insta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-insta.debug.xcconfig"; path = "Target Support Files/Pods-insta/Pods-insta.debug.xcconfig"; sourceTree = "<group>"; };
 		EDD120CD5F9BFEF91C5E01D6 /* Pods-insta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-insta.release.xcconfig"; path = "Target Support Files/Pods-insta/Pods-insta.release.xcconfig"; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				44F2E6E52720618500E43C80 /* SearchResultViewController.swift */,
 				44F2E6E72720619200E43C80 /* SearchViewController.swift */,
 				44F2E6E92720619C00E43C80 /* SettingsViewController.swift */,
+				44F2E6F92720AA3400E43C80 /* SettingViewController.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44F2E6CC272053E400E43C80 /* ExploreViewController.swift in Sources */,
+				44F2E6FA2720AA3500E43C80 /* SettingViewController.swift in Sources */,
 				44F2E6CE272053F700E43C80 /* CameraViewController.swift in Sources */,
 				44F2E6E02720612800E43C80 /* PostEditViewController.swift in Sources */,
 				44F2E6E22720614200E43C80 /* PostViewController.swift in Sources */,

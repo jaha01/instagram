@@ -9,7 +9,7 @@ import UIKit
 
 struct SettingCellModel{
     let title: String
-    let handle: (()-> Void)
+    let handler: (()-> Void)
 }
 
 //ViewController to show user settings
@@ -40,16 +40,12 @@ final class SettingsViewController: UIViewController {
     
     
     private func configureModels(){
-        print("111111")
         let section = [
             SettingCellModel(title: "Log out"){ [weak self] in
-                //self?.didTapLogOut()
                 self?.didTapLogOut()
-                print("LOG OUT")
             }
         ]
         data.append(section)
-        print("22222")
     }
 
     private func didTapLogOut(){
@@ -59,10 +55,10 @@ final class SettingsViewController: UIViewController {
                    //present log in
                     let loginVC = LoginViewController()
                     loginVC.modalPresentationStyle = .fullScreen
-                    self.present(loginVC, animated: true) {
+                    self.present(loginVC, animated: true)
                         self.navigationController?.popViewController(animated: false)
                         self.tabBarController?.selectedIndex = 0
-                    }
+                    
                 }
                  else {
                     //completion(false)
@@ -77,16 +73,22 @@ final class SettingsViewController: UIViewController {
 extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView)->Int{
-        return data.count
+        return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return data[section].count
+        return 1
     }
+    
+    /*func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = "Log Out"
+        return cell
+    }*/
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = data[indexPath.section][indexPath.row].title
+        cell.textLabel?.text = "Log out"
         return cell
     }
     
@@ -94,9 +96,10 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: true)
         //Handle cell selection
         let model = data[indexPath.section][indexPath.row]
-        model.handle()
-        // or like this
-        //data[indexPath.section][indexPath.row].model.handler()
+        model.handler()
+//         or like this
+//        data[indexPath.section][indexPath.row].model.handler()
+      //  didTapLogOut()
     }
 }
 
