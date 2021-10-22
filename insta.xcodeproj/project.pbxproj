@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2CDFAFB1A76B54D8A2C94460 /* Pods_insta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 666B1F2B1625371DB5C4213A /* Pods_insta.framework */; };
+		44A1EA4D2721EFBF0076EC1C /* IGPostFeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1EA4C2721EFBF0076EC1C /* IGPostFeedTableViewCell.swift */; };
+		44A1EA50272205850076EC1C /* IGFeEdPostHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1EA4F272205850076EC1C /* IGFeEdPostHeaderTableViewCell.swift */; };
+		44A1EA52272205980076EC1C /* IGFeedPostActionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1EA51272205980076EC1C /* IGFeedPostActionsTableViewCell.swift */; };
+		44A1EA54272205B20076EC1C /* IGFeedPostGeneralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1EA53272205B20076EC1C /* IGFeedPostGeneralTableViewCell.swift */; };
+		44A1EA56272300640076EC1C /* FormTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1EA55272300640076EC1C /* FormTableViewCell.swift */; };
+		44A1EA5927230F990076EC1C /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1EA5827230F990076EC1C /* PhotoCollectionViewCell.swift */; };
+		44A1EA5B272310000076EC1C /* ProfileInfoHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1EA5A272310000076EC1C /* ProfileInfoHeaderCollectionReusableView.swift */; };
+		44A1EA5D272310770076EC1C /* ProfileTabsCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1EA5C272310770076EC1C /* ProfileTabsCollectionReusableView.swift */; };
 		44F2E6B327204E1B00E43C80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F2E6B227204E1B00E43C80 /* AppDelegate.swift */; };
 		44F2E6B527204E1B00E43C80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F2E6B427204E1B00E43C80 /* SceneDelegate.swift */; };
 		44F2E6B727204E1B00E43C80 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F2E6B627204E1B00E43C80 /* HomeViewController.swift */; };
@@ -37,6 +45,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44A1EA4C2721EFBF0076EC1C /* IGPostFeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGPostFeedTableViewCell.swift; sourceTree = "<group>"; };
+		44A1EA4F272205850076EC1C /* IGFeEdPostHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeEdPostHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		44A1EA51272205980076EC1C /* IGFeedPostActionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostActionsTableViewCell.swift; sourceTree = "<group>"; };
+		44A1EA53272205B20076EC1C /* IGFeedPostGeneralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostGeneralTableViewCell.swift; sourceTree = "<group>"; };
+		44A1EA55272300640076EC1C /* FormTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableViewCell.swift; sourceTree = "<group>"; };
+		44A1EA5827230F990076EC1C /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		44A1EA5A272310000076EC1C /* ProfileInfoHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		44A1EA5C272310770076EC1C /* ProfileTabsCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabsCollectionReusableView.swift; sourceTree = "<group>"; };
 		44F2E6AF27204E1B00E43C80 /* insta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = insta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F2E6B227204E1B00E43C80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44F2E6B427204E1B00E43C80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +98,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44A1EA4B2721EF840076EC1C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				44A1EA4E272205420076EC1C /* Home Feed */,
+				44A1EA55272300640076EC1C /* FormTableViewCell.swift */,
+				44A1EA5827230F990076EC1C /* PhotoCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		44A1EA4E272205420076EC1C /* Home Feed */ = {
+			isa = PBXGroup;
+			children = (
+				44A1EA4C2721EFBF0076EC1C /* IGPostFeedTableViewCell.swift */,
+				44A1EA4F272205850076EC1C /* IGFeEdPostHeaderTableViewCell.swift */,
+				44A1EA51272205980076EC1C /* IGFeedPostActionsTableViewCell.swift */,
+				44A1EA53272205B20076EC1C /* IGFeedPostGeneralTableViewCell.swift */,
+			);
+			path = "Home Feed";
+			sourceTree = "<group>";
+		};
+		44A1EA5727230F470076EC1C /* CollectionView Headers */ = {
+			isa = PBXGroup;
+			children = (
+				44A1EA5A272310000076EC1C /* ProfileInfoHeaderCollectionReusableView.swift */,
+				44A1EA5C272310770076EC1C /* ProfileTabsCollectionReusableView.swift */,
+			);
+			path = "CollectionView Headers";
+			sourceTree = "<group>";
+		};
 		44F2E6A627204E1B00E43C80 = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +184,8 @@
 		44F2E6CA27204FEA00E43C80 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				44A1EA5727230F470076EC1C /* CollectionView Headers */,
+				44A1EA4B2721EF840076EC1C /* Cells */,
 				44F2E6C927204FB300E43C80 /* Storyboards */,
 				44F2E6BB27204E1F00E43C80 /* Assets.xcassets */,
 			);
@@ -343,22 +391,30 @@
 				44F2E6FA2720AA3500E43C80 /* SettingViewController.swift in Sources */,
 				44F2E6CE272053F700E43C80 /* CameraViewController.swift in Sources */,
 				44F2E6E02720612800E43C80 /* PostEditViewController.swift in Sources */,
+				44A1EA50272205850076EC1C /* IGFeEdPostHeaderTableViewCell.swift in Sources */,
 				44F2E6E22720614200E43C80 /* PostViewController.swift in Sources */,
 				44F2E6D02720540600E43C80 /* NotificationViewController.swift in Sources */,
 				44F2E6D9272060B000E43C80 /* RegistrationViewController.swift in Sources */,
+				44A1EA54272205B20076EC1C /* IGFeedPostGeneralTableViewCell.swift in Sources */,
 				44F2E6B727204E1B00E43C80 /* HomeViewController.swift in Sources */,
+				44A1EA56272300640076EC1C /* FormTableViewCell.swift in Sources */,
+				44A1EA4D2721EFBF0076EC1C /* IGPostFeedTableViewCell.swift in Sources */,
 				44F2E6E62720618500E43C80 /* SearchResultViewController.swift in Sources */,
 				44F2E6F2272062AE00E43C80 /* DatabaseManager.swift in Sources */,
 				44F2E6F6272062CC00E43C80 /* AuthManager.swift in Sources */,
+				44A1EA5B272310000076EC1C /* ProfileInfoHeaderCollectionReusableView.swift in Sources */,
 				44F2E6F4272062BF00E43C80 /* StorageManager.swift in Sources */,
 				44F2E6DE2720610F00E43C80 /* ListViewController.swift in Sources */,
 				44F2E6D72720609500E43C80 /* LoginViewController.swift in Sources */,
+				44A1EA5D272310770076EC1C /* ProfileTabsCollectionReusableView.swift in Sources */,
 				44F2E6F8272062D700E43C80 /* Extensions.swift in Sources */,
 				44F2E6E82720619200E43C80 /* SearchViewController.swift in Sources */,
 				44F2E6E42720617400E43C80 /* PublishedViewController.swift in Sources */,
 				44F2E6EA2720619C00E43C80 /* SettingsViewController.swift in Sources */,
 				44F2E6D22720541000E43C80 /* ProfileViewController.swift in Sources */,
 				44F2E6B327204E1B00E43C80 /* AppDelegate.swift in Sources */,
+				44A1EA52272205980076EC1C /* IGFeedPostActionsTableViewCell.swift in Sources */,
+				44A1EA5927230F990076EC1C /* PhotoCollectionViewCell.swift in Sources */,
 				44F2E6DC2720610200E43C80 /* EditProfileViewController.swift in Sources */,
 				44F2E6B527204E1B00E43C80 /* SceneDelegate.swift in Sources */,
 			);

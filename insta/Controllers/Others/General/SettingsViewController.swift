@@ -7,10 +7,10 @@
 
 import UIKit
 
-struct SettingCellModel{
+/*struct SettingCellModel {
     let title: String
     let handler: (()-> Void)
-}
+
 
 //ViewController to show user settings
 final class SettingsViewController: UIViewController {
@@ -22,7 +22,7 @@ final class SettingsViewController: UIViewController {
         return tableView
     }()
     
-    private var data = [[SettingCellModel]]()
+   // private var data = [[SettingCellModel]]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,7 +45,7 @@ final class SettingsViewController: UIViewController {
                 self?.didTapLogOut()
             }
         ]
-        data.append(section)
+     //   data.append(section)
     }
 
     private func didTapLogOut(){
@@ -73,11 +73,11 @@ final class SettingsViewController: UIViewController {
 extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView)->Int{
-        return 1
+        return data.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return 1
+        return data[section].count
     }
     
     /*func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -103,3 +103,4 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
+*/
