@@ -44,7 +44,7 @@ class PhotoCollectionViewCell: UICollectionViewCell {
     }
     
     public func configure(with model: UserPost){
-        let thumbnailURL = model.thumbnailImage
+        let url = model.thumbnailImage
 //        let task = URLSession.shared.dataTask(with: url) { data, _, _ in
 //            photoImageView.image = UIImage(data: data!)
 //        }

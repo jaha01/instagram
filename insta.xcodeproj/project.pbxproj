@@ -16,6 +16,7 @@
 		44A1EA5927230F990076EC1C /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1EA5827230F990076EC1C /* PhotoCollectionViewCell.swift */; };
 		44A1EA5B272310000076EC1C /* ProfileInfoHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1EA5A272310000076EC1C /* ProfileInfoHeaderCollectionReusableView.swift */; };
 		44A1EA5D272310770076EC1C /* ProfileTabsCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1EA5C272310770076EC1C /* ProfileTabsCollectionReusableView.swift */; };
+		44A1EA5F27234E650076EC1C /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1EA5E27234E650076EC1C /* Models.swift */; };
 		44F2E6B327204E1B00E43C80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F2E6B227204E1B00E43C80 /* AppDelegate.swift */; };
 		44F2E6B527204E1B00E43C80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F2E6B427204E1B00E43C80 /* SceneDelegate.swift */; };
 		44F2E6B727204E1B00E43C80 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F2E6B627204E1B00E43C80 /* HomeViewController.swift */; };
@@ -53,6 +54,7 @@
 		44A1EA5827230F990076EC1C /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		44A1EA5A272310000076EC1C /* ProfileInfoHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		44A1EA5C272310770076EC1C /* ProfileTabsCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabsCollectionReusableView.swift; sourceTree = "<group>"; };
+		44A1EA5E27234E650076EC1C /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		44F2E6AF27204E1B00E43C80 /* insta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = insta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F2E6B227204E1B00E43C80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44F2E6B427204E1B00E43C80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -250,6 +252,7 @@
 		44F2E6EE2720624D00E43C80 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				44A1EA5E27234E650076EC1C /* Models.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 				44F2E6E82720619200E43C80 /* SearchViewController.swift in Sources */,
 				44F2E6E42720617400E43C80 /* PublishedViewController.swift in Sources */,
 				44F2E6EA2720619C00E43C80 /* SettingsViewController.swift in Sources */,
+				44A1EA5F27234E650076EC1C /* Models.swift in Sources */,
 				44F2E6D22720541000E43C80 /* ProfileViewController.swift in Sources */,
 				44F2E6B327204E1B00E43C80 /* AppDelegate.swift in Sources */,
 				44A1EA52272205980076EC1C /* IGFeedPostActionsTableViewCell.swift in Sources */,
