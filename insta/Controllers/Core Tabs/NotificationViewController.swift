@@ -7,8 +7,18 @@
 
 import UIKit
 
-class NotificationViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+enum UserNotificationType{
+    case like(post: UserPost)
+    case follow
+}
 
+struct UserNotification{
+    let type: UserNotificationType
+    let text: String
+    let user: User
+}
+
+final class NotificationViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     private let tableView: UITableView = {
         let tableView = UITableView()
@@ -27,12 +37,17 @@ class NotificationViewController: UIViewController, UITableViewDelegate, UITable
     
     private lazy var noNotificationsView = NotificationsView()
     
+    private var models = [UserNotification]()
+    
+    
     //MARK: - Lifecycle
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
+        fetchNotifications()
+        
         navigationItem.title = "Notifications"
         view.addSubview(tableView)
         view.addSubview(spinner)
@@ -49,6 +64,34 @@ class NotificationViewController: UIViewController, UITableViewDelegate, UITable
         spinner.center = view.center
     }
     
+    private func fetchNotifications(){
+        for x in 0...100 {
+        let post = UserPost(identifier: "",
+                            postType: .photo,
+                            thumbnailImage: URL(string: "https://www.google.com")!,
+                            postURL: URL(string: "https://www.google.com")!,
+                            caption: nil,
+                            likeCount: [],//"shuha",'yusuf','ilhom'],
+                            comments: [],//"cool photo", "pretty photo"],
+                            postedDate: Date(),//(02.02.12),
+                            taggedUsers: ["gulya", "kto-to"])
+        
+            let model = UserNotification(type: x % 2 == 0 ? .like(post: post) : .follow,
+                                         text: "Hello",
+                                         user: User(username: "username",
+                                                    bio: "bio",
+                                                    name: (first: "first", last: "last"),
+                                                    birthDate: Date(),//("01-08-1995"),
+                                                    gender: .male,
+                                                    counts: UserCount(followers: 150,
+                                                                      following: 100,
+                                                                      posts: 23),
+                                                    joinDate: Date(),//(01.01.2021),
+                                                    profilePhoto: URL(string: "https://www.google.com")!))
+            models.append(model)
+        }
+    }
+    
     private func addNoNotificationsView(){
         tableView.isHidden = true
         view.addSubview(tableView)
@@ -57,11 +100,23 @@ class NotificationViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return 50
+        return models.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        return cell
+        let model = models[indexPath.row]
+        switch model.type {
+        case .like(_):
+            //like cell
+            let cell = tableView.dequeueReusableCell(withIdentifier: NotificationLikeEventTableViewCell.identifier, for: indexPath) as! NotificationLikeEventTableViewCell
+            cell.configure(with: model)
+            return cell
+        case .follow:
+            //follow cell
+            let cell = tableView.dequeueReusableCell(withIdentifier: NotificationsFollowEventTableViewCell.identifier, for: indexPath) as! NotificationsFollowEventTableViewCell
+//            cell.configure(with: model)
+            return cell
+        }
+
     }
 }
