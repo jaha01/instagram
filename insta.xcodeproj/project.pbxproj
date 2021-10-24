@@ -17,6 +17,10 @@
 		44A1EA5B272310000076EC1C /* ProfileInfoHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1EA5A272310000076EC1C /* ProfileInfoHeaderCollectionReusableView.swift */; };
 		44A1EA5D272310770076EC1C /* ProfileTabsCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1EA5C272310770076EC1C /* ProfileTabsCollectionReusableView.swift */; };
 		44A1EA5F27234E650076EC1C /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1EA5E27234E650076EC1C /* Models.swift */; };
+		44A1EA6127247FA90076EC1C /* UserFollowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1EA6027247FA90076EC1C /* UserFollowTableViewCell.swift */; };
+		44A1EA632724C1710076EC1C /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1EA622724C1710076EC1C /* NotificationsView.swift */; };
+		44A1EA662724CB110076EC1C /* NotificationsFollowEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1EA652724CB110076EC1C /* NotificationsFollowEventTableViewCell.swift */; };
+		44A1EA682724CB5F0076EC1C /* NotificationLikeEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1EA672724CB5F0076EC1C /* NotificationLikeEventTableViewCell.swift */; };
 		44F2E6B327204E1B00E43C80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F2E6B227204E1B00E43C80 /* AppDelegate.swift */; };
 		44F2E6B527204E1B00E43C80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F2E6B427204E1B00E43C80 /* SceneDelegate.swift */; };
 		44F2E6B727204E1B00E43C80 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F2E6B627204E1B00E43C80 /* HomeViewController.swift */; };
@@ -55,6 +59,10 @@
 		44A1EA5A272310000076EC1C /* ProfileInfoHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		44A1EA5C272310770076EC1C /* ProfileTabsCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabsCollectionReusableView.swift; sourceTree = "<group>"; };
 		44A1EA5E27234E650076EC1C /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		44A1EA6027247FA90076EC1C /* UserFollowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFollowTableViewCell.swift; sourceTree = "<group>"; };
+		44A1EA622724C1710076EC1C /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		44A1EA652724CB110076EC1C /* NotificationsFollowEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsFollowEventTableViewCell.swift; sourceTree = "<group>"; };
+		44A1EA672724CB5F0076EC1C /* NotificationLikeEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationLikeEventTableViewCell.swift; sourceTree = "<group>"; };
 		44F2E6AF27204E1B00E43C80 /* insta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = insta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F2E6B227204E1B00E43C80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44F2E6B427204E1B00E43C80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,9 +111,11 @@
 		44A1EA4B2721EF840076EC1C /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				44A1EA642724CA720076EC1C /* Notifications */,
 				44A1EA4E272205420076EC1C /* Home Feed */,
 				44A1EA55272300640076EC1C /* FormTableViewCell.swift */,
 				44A1EA5827230F990076EC1C /* PhotoCollectionViewCell.swift */,
+				44A1EA6027247FA90076EC1C /* UserFollowTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -128,6 +138,15 @@
 				44A1EA5C272310770076EC1C /* ProfileTabsCollectionReusableView.swift */,
 			);
 			path = "CollectionView Headers";
+			sourceTree = "<group>";
+		};
+		44A1EA642724CA720076EC1C /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				44A1EA652724CB110076EC1C /* NotificationsFollowEventTableViewCell.swift */,
+				44A1EA672724CB5F0076EC1C /* NotificationLikeEventTableViewCell.swift */,
+			);
+			path = Notifications;
 			sourceTree = "<group>";
 		};
 		44F2E6A627204E1B00E43C80 = {
@@ -188,8 +207,9 @@
 			children = (
 				44A1EA5727230F470076EC1C /* CollectionView Headers */,
 				44A1EA4B2721EF840076EC1C /* Cells */,
-				44F2E6C927204FB300E43C80 /* Storyboards */,
 				44F2E6BB27204E1F00E43C80 /* Assets.xcassets */,
+				44F2E6C927204FB300E43C80 /* Storyboards */,
+				44A1EA622724C1710076EC1C /* NotificationsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -392,6 +412,7 @@
 			files = (
 				44F2E6CC272053E400E43C80 /* ExploreViewController.swift in Sources */,
 				44F2E6FA2720AA3500E43C80 /* SettingViewController.swift in Sources */,
+				44A1EA662724CB110076EC1C /* NotificationsFollowEventTableViewCell.swift in Sources */,
 				44F2E6CE272053F700E43C80 /* CameraViewController.swift in Sources */,
 				44F2E6E02720612800E43C80 /* PostEditViewController.swift in Sources */,
 				44A1EA50272205850076EC1C /* IGFeEdPostHeaderTableViewCell.swift in Sources */,
@@ -403,6 +424,9 @@
 				44A1EA56272300640076EC1C /* FormTableViewCell.swift in Sources */,
 				44A1EA4D2721EFBF0076EC1C /* IGPostFeedTableViewCell.swift in Sources */,
 				44F2E6E62720618500E43C80 /* SearchResultViewController.swift in Sources */,
+				44A1EA682724CB5F0076EC1C /* NotificationLikeEventTableViewCell.swift in Sources */,
+				44A1EA6127247FA90076EC1C /* UserFollowTableViewCell.swift in Sources */,
+				44A1EA632724C1710076EC1C /* NotificationsView.swift in Sources */,
 				44F2E6F2272062AE00E43C80 /* DatabaseManager.swift in Sources */,
 				44F2E6F6272062CC00E43C80 /* AuthManager.swift in Sources */,
 				44A1EA5B272310000076EC1C /* ProfileInfoHeaderCollectionReusableView.swift in Sources */,
