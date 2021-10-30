@@ -8,10 +8,10 @@
 import UIKit
 
 class ListViewController: UIViewController {
-
+    
     private let data: [UserRelationship]
     
-   //private var data = [UserRelationship]()
+    //private var data = [UserRelationship]()
     
     private let tableView: UITableView = {
         let tableView = UITableView()
@@ -86,7 +86,7 @@ extension ListViewController: UserFollowTableViewCellDelegate {
         case .not_follwing:
             // perform firebase updaet to follow
             break
-
+            
         }
     }
     

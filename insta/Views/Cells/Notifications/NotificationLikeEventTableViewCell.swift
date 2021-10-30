@@ -16,7 +16,7 @@ class NotificationLikeEventTableViewCell: UITableViewCell {
 
     static let identifier = "NotificationLikeEventTableViewCell"
     
-    weak var delegate: NotificationsFollowEventTableViewCellDelegate?
+   weak var delegate: NotificationLikeEventTableViewCellDelegate?
     
     private var model: UserNotification?
     
@@ -48,7 +48,15 @@ class NotificationLikeEventTableViewCell: UITableViewCell {
         contentView.addSubview(profileImageView)
         contentView.addSubview(label)
         contentView.addSubview(postButton)
+        postButton.addTarget(self, action: #selector(didTapPostsButton), for: .touchUpInside)
+        selectionStyle = .none
+    }
     
+    @objc private func didTapPostsButton(){
+        guard let model = model else {
+            return
+        }
+        delegate?.didTapRelatedPostButton(model: model)
     }
     
     required init?(coder: NSCoder) {
@@ -57,9 +65,13 @@ class NotificationLikeEventTableViewCell: UITableViewCell {
     
     public func configure(with model: UserNotification){
         self.model = model
+        
         switch model.type {
         case .like(let post):
             let thumbnail = post.thumbnailImage
+            guard !thumbnail.absoluteString.contains("google.com") else {
+                return
+            }
             postButton.sd_setBackgroundImage(with: thumbnail, for: .normal, completed: nil)
         case .follow:
             break
@@ -70,7 +82,8 @@ class NotificationLikeEventTableViewCell: UITableViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        postButton.setTitle(nil, for: .normal)
+        postButton.setBackgroundImage(nil, for: .normal)
+       // postButton.setTitle(nil, for: .normal)
         postButton.backgroundColor = nil
         postButton.layer.borderWidth = 0
         label.text = nil
@@ -85,8 +98,8 @@ class NotificationLikeEventTableViewCell: UITableViewCell {
         profileImageView.layer.cornerRadius = profileImageView.height/2
         
         let size = contentView.height - 4
-        postButton.frame = CGRect(x: contentView.width-size, y: 2, width: size, height: size)
+        postButton.frame = CGRect(x: contentView.width-5-size, y: 2, width: size, height: size)
         
-        label.frame = CGRect(x: profileImageView.right, y: 0, width: contentView.width-size-profileImageView.width-6, height: contentView.height)
+        label.frame = CGRect(x: profileImageView.right + 5, y: 0, width: contentView.width-size-profileImageView.width-16, height: contentView.height)
     }
 }
