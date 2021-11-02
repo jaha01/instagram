@@ -14,6 +14,7 @@ final class IGPostFeedTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?){
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        contentView.backgroundColor = .secondarySystemBackground
     }
     
     required init?(coder: NSCoder) {
@@ -22,6 +23,10 @@ final class IGPostFeedTableViewCell: UITableViewCell {
     
     public func congigure(){
         //configure cell
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
     }
     
 }
