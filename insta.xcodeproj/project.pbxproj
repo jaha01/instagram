@@ -124,8 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				44A1EA4C2721EFBF0076EC1C /* IGPostFeedTableViewCell.swift */,
-				44A1EA51272205980076EC1C /* IGFeedPostActionsTableViewCell.swift */,
 				44A1EA692731A7030076EC1C /* IGFeedPostHeaderTableViewCell.swift */,
+				44A1EA51272205980076EC1C /* IGFeedPostActionsTableViewCell.swift */,
 				44A1EA53272205B20076EC1C /* IGFeedPostGeneralTableViewCell.swift */,
 			);
 			path = "Home Feed & Post";

@@ -135,6 +135,7 @@ extension PostViewController: UITableViewDelegate, UITableViewDataSource{
             return cell
         case .primaryContent(let post):
             let cell = tableView.dequeueReusableCell(withIdentifier: IGPostFeedTableViewCell.identifier, for: indexPath) as! IGPostFeedTableViewCell
+            cell.configure(with: post)
             return cell
         case .header(let user):
             let cell = tableView.dequeueReusableCell(withIdentifier: IGFeedPostHeaderTableViewCell.identifier, for: indexPath) as! IGFeedPostHeaderTableViewCell
