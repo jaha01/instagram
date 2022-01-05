@@ -30,6 +30,8 @@ class ExploreViewController: UIViewController {
     
     private var tabbedSearchCollectionView: UICollectionView?
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground

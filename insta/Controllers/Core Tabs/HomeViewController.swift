@@ -82,15 +82,15 @@ class HomeViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        // handleNotAuthenticated()
+        handleNotAuthenticated()
         
-        if Auth.auth().currentUser == nil {
-            //Show login
-            let loginVC = LoginViewController()
-            loginVC.modalPresentationStyle = .fullScreen
-            self.present(loginVC, animated: false)
-            
-        }
+//        if Auth.auth().currentUser == nil {
+//            //Show login
+//            let loginVC = LoginViewController()
+//            loginVC.modalPresentationStyle = .fullScreen
+//            self.present(loginVC, animated: false)
+//
+//        }
         
         //        do {
         //            try Auth.auth().signOut()
@@ -100,23 +100,23 @@ class HomeViewController: UIViewController {
         //        }
         
     }
-}
-
-
-private func handleNotAuthenticated(){
-    //Check auth status
     
-    if Auth.auth().currentUser == nil {
-        //Show login
-        let loginVC = LoginViewController()
-        loginVC.modalPresentationStyle = .fullScreen
-        //    self.present(loginVC, animated: false)
+    private func handleNotAuthenticated(){
+        //Check auth status
         
-        
+        if Auth.auth().currentUser == nil {
+            //Show login
+            let loginVC = LoginViewController()
+            loginVC.modalPresentationStyle = .fullScreen
+            self.present(loginVC, animated: false)
+            
+        }
         
     }
-    
 }
+
+
+
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
     
